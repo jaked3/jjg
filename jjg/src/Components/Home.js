@@ -30,7 +30,7 @@ return (
 			 </p>
 
 			  <p>
-	     		We are currently in devlopement of our first mobile game that will be 
+	     		We are currently in development of our first mobile game that will be 
 	     		available for IOS and Android. Stay tuned for more updates and please feel
 	     		free to check out our social medias!
 			 </p>
