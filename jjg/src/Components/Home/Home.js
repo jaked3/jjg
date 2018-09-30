@@ -2,12 +2,42 @@ import React from 'react';
 import './Home.css';
 import 'tachyons';
 
+import Nav from '../Nav/Nav';
+
 const Home = () => {
 
 return (
-	
+
+		
 	<div className="athelas">
-	  <div className="vh-100 dt w-100 tc bg-dark-gray white cover about2" >
+
+
+
+
+
+	<header className="sans-serif">
+  <div className="cover bg-left bg-center-l about2" >
+    <div className="bg-black-80 pb5 pb6-m pb7-l">
+      <nav className="dt w-100 mw8 center"> 
+     	<Nav />
+      </nav> 
+      <div className="tc-l mt4 mt5-m mt6-l ph3">
+      <h1 className="f1 f-headline-l fw1 i white-60">Jungle Juice Games</h1>
+        <h2 className="fw1 f3 white-80 mt3 mb4">Keep on Jungle Juicing</h2>
+        <a className="f6 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mb3" href="/Games/">Games</a>
+
+        <span className="dib v-mid ph3 white-70 mb3">or</span>
+        <a className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3" href="/">Subscribe</a>
+      
+      </div>
+
+      	
+    </div>
+  </div> 
+</header>
+
+
+	 {/* <div className="vh-100 dt w-100 tc bg-dark-gray white cover about2" >
 	    <div className="dtc v-mid">
 	      <div className="white-70">
 	      	</div>
@@ -20,23 +50,23 @@ return (
 	      </div>
 	    </div>
 	  </div>
+	 */}  
+
+	  	
+
 	  <div className="center measure-wide f5 pv5 lh-copy ph2">
-	    <h1 className="f1 lh-title center">Who Are We?</h1>
-	    
-	  		 <p>
-	     		Jungle Juice Games is startup based in Ottawa, Canada. The focus of our
-	     		company	is to provide the world with amazing mobile games.
-
-			 </p>
-
-			  <p>
-	     		We are currently in development of our first mobile game that will be 
-	     		available for IOS and Android. Stay tuned for more updates and please feel
-	     		free to check out our social medias!
-			 </p>
+			    <a className="mt5-l db center mw6 tc black link dim" title="Unity" href="/">
+					  	<img className="db ba b--black-10" alt="Unity"  src={require('./unity.jpg')} />
+					  	<dl className="mt2 f6 lh-copy">
+					    <dt className="clip">Title</dt>
+					    <dd className="ml0">Coming Soon...</dd>
+					    <dt className="clip">Type</dt>
+					    <dd className="ml0 gray">IOS & Android</dd>
+					  	</dl>
+				</a>
 
 
-			 <footer className="pv4 ph3 tc">
+			 <footer className="pv5 ph3 tc">
 			<a className="link hover-silver near-black dib mh3 tc" href="https://twitter.com/JungleJGames" 
 			target="_blank"
 			 rel="noopener noreferrer"
@@ -55,7 +85,7 @@ return (
 		  
 		 
  
-</footer>
+		</footer>
 	    
 	  </div>
 	</div>
